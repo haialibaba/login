@@ -9,6 +9,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -153,13 +156,13 @@ body.active{
 }
 .formBx .form form .form-group .form-submit{
     display: block;
-    background-color: var(--primary-color);
+    background-color: rgb(63,208,212);
     border: none;
     min-width: 100px;
     padding: 12px 10px;
     font-size: 1.2rem;
     cursor: pointer;
-    color: white;
+    color: #fff;
     text-transform: capitalize;
 }
 .formBx.active .signupForm .form-group .form-submit{
@@ -169,7 +172,7 @@ body.active{
 .formBx .form form .forgot{
     color: #333;
     font-size: 1.0rem;
-    padding-top: 4px;
+    padding-bottom: 4px;
     text-decoration: none;
 }
 
@@ -180,6 +183,40 @@ body.active{
 }
 .form-group.invalid input{
     border: 1px solid #f43648 !important;
+}
+
+.auth-form__social{
+    padding: 0px 4px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    text-align: center;
+}
+.auth-form__social--icon{
+    font-size: 1.2rem;
+    padding-right: 4px;
+}
+.auth-form__social--facebook,
+.auth-form__social--google,
+.auth-form__social--github{
+    font-weight: 600;
+    padding-top: 8px;
+    padding-right: 4px;
+    font-size: 0.7rem;
+}
+.auth-form__social--facebook{
+    color: blue;
+}
+.auth-form__social--google{
+    color: greenyellow;
+}
+.auth-form__social--github{
+    color: purple;
+}
+.auth-form__social--title{
+    padding: 6px 8px 0px 0px ;
+    font-weight: 500;
+    font-size: 1.0rem;
 }
 
 @media (max-width: 1023px){
