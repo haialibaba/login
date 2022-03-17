@@ -87,7 +87,8 @@ body.active{
     background-color: #fff;
     color: #333;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 550;
+    font-family:sans-serif;
     border: none;
 }
 .formBx{
@@ -171,7 +172,7 @@ body.active{
 }
 .formBx .form form .forgot{
     color: #333;
-    font-size: 1.0rem;
+    font-size: 16px;
     padding-bottom: 4px;
     text-decoration: none;
 }
@@ -179,7 +180,7 @@ body.active{
 /* invalid */
 .form-group.invalid .form-message{
     color: #f43648;
-    font-size: 0.8rem;
+    font-size: 13px;
 }
 .form-group.invalid input{
     border: 1px solid #f43648 !important;
