@@ -4,96 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Hi - My Crush</title>
 </head>
-<body class="">
-    <div class="container">
-        <div class="primary-bg">
-            <div class="box signin">
-                <h2>Already Have an Account?</h2>
-                <button class="signinBtn">Sign in</button>
-            </div>
+<body>
+    <style>
 
-            <div class="box signup">
-                <h2>Don't Have an Account?</h2>
-                <button class="signupBtn">Sign up</button>
-            </div>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            padding-top: 30px;
+            position: relative;
+            min-height: 100vh;
+            background-color: pink;
+        }
+        h2{
+            font-family: sans-serif;
+            text-align: center;
+            margin: 16px 0px;
+        }
+        span{
+            color: red;
+        }
+
+        .img-cr{
+            text-align: center;
+        }
+
+        img{
+            text-align: center;
+            width:30%;
+            margin: 0 a
+        }
+
+        a{
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: greenyellow;
+            padding: 8px 16px;
+            font-size: 25px;
+            font-family: sans-serif;
+            border-radius: 5px;
+            color: white;
+        }
+
+        a:hover{
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .accept{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+
+        @keyframes tele{
+            from{
+                transform: translate(0,0);
+            }
+
+            to {
+                transform: translate(40%,-100px);
+            }
+        }
+
+        button{
+            padding: 8px 8px;
+          margin-left: 20px;
+          background-color: red;
+          color: white;
+          border-radius: 5px;
+          font-size: 25px;
+          text-transform: uppercase;
+          border: none;
+        }
+
+        #not{
+            position: absolute;
+        }
+
+        
+
+
+    </style>
+    <div class="main">
+        <h2>Em <span> Thích </span> Chị</h1>
+        <div class="img-cr">
+
+            <img src="img.gif" alt="">
         </div>
-        <div class="formBx">
-            <div class="form signinForm">
-                <form action="">
-                    <h3>Sign In</h3>
-                    <div class="form-group">
-                        <input name="" id="user-name" type="text" placeholder="Username">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <input name="" id="user-password" type="password" placeholder="Password">
-                        <span class="form-message"></span>
-                    </div>
-                    <a href="#" class="forgot">Forgot Password</a>
-                    <div class="form-group">
-                        <button class="form-submit">Submit</button>
-                    </div>
-                    
-
-
-                    <div class="auth-form__social">
-                        <span class="auth-form__social--title">Login with social: </span>
-                        <a href="" class="auth-form__social--facebook btn btn--size-s btn--with-icon">
-                         <i class="auth-form__social--icon fab fa-facebook-square"></i>
-                        </a>
-     
-                        <a href="" class=" auth-form__social--google btn btn--size-s btn--with-icon">
-                         <i class=" auth-form__social--icon fab fa-google"></i>
-                        </a>
-
-                        <a href="" class=" auth-form__social--github btn btn--size-s btn--with-icon">
-                            <i class=" auth-form__social--icon fab fa-github"></i>
-                           </a>
-     
-                     </div>
-
-                </form>
+        <h2>ĐỒNG Ý CHO <span> EM </span> TÌM HIỂU CHỊ NHA</h1>
+            <div class="accept">
+                <a href="accept.html">Chị đồng ý</a>
             </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <div class="cancel">
 
-            <div class="form signupForm">
-                <form action="">
-                    <h3>Sign Up</h3>
-                    <div class="form-group invalid">
-                        <input name="" id="new-user-name" type="text" placeholder="Username">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group invalid">
-                        <input name="" id="new-user-email" type="text" placeholder="Email">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group invalid">
-                        <input name="" id="new-user-address" type="text" placeholder="Address">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group invalid">
-                        <input name="" id="new-user-password" type="password" placeholder="Password" aria-autocomplete="list">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <input name="" id="confirm-user-password" type="password" placeholder="Confirm Password">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group">
-                        <button class="form-submit">Register</button>
-                    </div>
-                    
-                </form>
+                <button id="not">Không</button>
             </div>
-        </div>
     </div>
 
-
-    <script src="main.js"></script>
-
+    <script>
+        $('button').on('mouseover',function(){
+            $(this).animate({
+                'top':Math.random() * window.innerHeight + "px",
+                'right':Math.random() * window.innerWidth + "px",
+            }, "medium")
+        });
+    </script>
 
 </body>
 </html>
